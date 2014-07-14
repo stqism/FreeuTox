@@ -4,6 +4,10 @@
 #define AFS(x) { .str = (uint8_t*)x, .length = sizeof(x) - 1 }
 #define _(String) gettext (String)
 
+setlocale(LC_ALL,"");
+bindtextdomain("freetox","/usr/share/locale");
+textdomain("freetox");
+
 static STRING addstatus[] = {
     AFS(_("Friend request sent. Your friend will appear online after accepting it.")),
     AFS(_("Attempting to resolve DNS name...")),

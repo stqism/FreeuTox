@@ -12,7 +12,7 @@ Something like this:
 
 Localization:
 
-> sh locale.sh en_us
+You'll need to install {LOCALE}.po to /usr/share/locale/{LOCALE}/freetox.po, really need to add a make install
 
 Windows:
 
