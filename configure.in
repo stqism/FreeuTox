@@ -1,0 +1,36 @@
+# Public domain
+#
+# This is a BSDBuild configure script source. The ./configure script is
+# generated from this file via mkconfigure(1). For more information, see:
+# http://bsdbuild.hypertriton.com/.
+#
+
+PACKAGE("Free/uTox")
+VERSION("0.0.1")
+
+REGISTER_SECTION("Free/uTox features")
+REGISTER("--enable-debug",                "Builds with debugging flags [no]")
+REGISTER_SECTION("paths")
+REGISTER("--with-dependency-search=DIR",	"search for dependencies in DIR")
+REGISTER("--with-libtoxcore=DIR",	"search for libtoxcore files in DIR")
+REGISTER("--with-libsodium=DIR",	"search for libsodium files in DIR")
+REGISTER("--with-libtoxav=DIR",	"search for libtoxav files in DIR")
+REGISTER("--with-libopenal=DIR", "search for openal files in DIR")
+
+REQUIRE(cc)
+
+CHECK(sodium,0.4.2,${prefix_libsodium})
+REQUIRE(toxcore,0.0.0,${prefix_toxcore})
+CHECK(openal,0.0.0,${prefix_libopenal})
+CHECK(toxav,0.0.0,${prefix_libtoxav})
+
+
+if [ "${enable_debug}" = "yes" ]; then
+	MDEFINE(OPT_CFLAGS, "-O0 -g")
+else
+	MDEFINE(OPT_CFLAGS, "-O2")
+fi	
+
+MDEFINE(CONFIGURE_OK,"yes")
+
+CONFIG_SCRIPT(freeutox, "-I${INCLDIR} ${CFLAGS}","-L${LIBDIR}")
