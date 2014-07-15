@@ -12,7 +12,15 @@ Something like this:
 
 Localization:
 
-You'll need to install {LOCALE}.po to /usr/share/locale/{LOCALE}/freetox.po, really need to add a make install
+You'll need to install {LOCALE}.po to /usr/share/locale/{LOCALE}/freetox.po, really need to finish make install
+
+Compiling:
+
+``./configure``
+
+``make depend all``
+
+``make install``
 
 Windows:
 
