@@ -1,0 +1,70 @@
+# Copyright goes here
+msgid ""
+msgstr ""
+"Project-Id-Version: Free/uTox\n"
+"Report-Msgid-Bugs-To: notadecent <notadecent@tox.im>\n"
+"POT-Creation-Date: 2014/07/16 20:00+2\n"
+"PO-Revision-Date: see creation date\n"
+"Last-Translator: notadecent <notadecent@tox.im>\n"
+"Language-Team: Dutch <notadecent@tox.im>\n"
+"Language: Dutch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ui_strings.h:11
+msgid "Friend request sent. Your friend will appear online after accepting it."
+msgstr "Vriendschapsverzoek verstuurd. Je vriend zal online komen zodra deze geaccepteerd is."
+
+#: ui_strings.h:12
+msgid "Attempting to resolve DNS name..."
+msgstr "DNS-naam oplossen..."
+
+#: ui_strings.h:13
+msgid "Error: Invalid Tox ID"
+msgstr "Fout: Ongeldig Tox ID"
+
+#: ui_strings.h:14
+msgid "Error: No Tox ID specified"
+msgstr "Fout: Geen Tox ID opgegeven"
+
+#: ui_strings.h:15
+msgid "Error: Message is too long"
+msgstr "Fout: Bericht te lang"
+
+#: ui_strings.h:16
+msgid "Error: Empty message"
+msgstr "Fout: Geen bericht"
+
+#: ui_strings.h:17
+msgid "Error: Tox ID is self ID"
+msgstr "Fout: Kan niet eigen Tox ID toevoegen"
+
+#: ui_strings.h:18
+msgid "Error: Tox ID is already in friend list"
+msgstr "Fout: Tox ID is reeds toegevoegd"
+
+#: ui_strings.h:19
+msgid "Error: Unknown"
+msgstr "Fout: Niet nader omschreven fout"
+
+#: ui_strings.h:20
+msgid "Error: Invalid Tox ID (bad checksum)"
+msgstr "Fout: Ongeldig Tox ID (checksumfout)"
+
+#: ui_strings.h:21
+msgid "Error: Invalid Tox ID (bad nospam value)"
+msgstr "Fout: Ongeldig Tox ID (nospam-waardefout)"
+
+#: ui_strings.h:22
+msgid "Error: No memory"
+msgstr "Fout: Geen geheugen beschikbaar"
+
+#: ui_strings.h:26
+msgid "New file transfer"
+msgstr "Nieuw bestandsoverdracht"
+
+#: ui_strings.h:27
+msgid "File transfer started"
+msgstr "Bestandsoverdracht gestart"
+
